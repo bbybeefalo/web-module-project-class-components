@@ -2,7 +2,7 @@ import React from 'react'
 
 export default class Form extends React.Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       task: ''
     }
@@ -29,7 +29,7 @@ export default class Form extends React.Component {
           value={this.state.task} 
           onChange={this.handleChange} />
           <button>Add</button>
-          <button>Clear Completed</button>
+          
         </form>
       </div>
     )

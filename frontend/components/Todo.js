@@ -9,9 +9,11 @@ export default class Todo extends React.Component {
 
   render() {
     return (
-      <div>
+      <div 
+      className={`${this.props.task.completed ? 'completed': ''}`}
+      onClick={() => this.props.toggleDone(this.props.task.id) } >
         <p>
-          {this.props.task}
+          {this.props.task.name}
         </p>
       </div>
     )
